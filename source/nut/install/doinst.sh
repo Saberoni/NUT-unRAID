@@ -20,20 +20,20 @@ chmod +0755 $DOCROOT/scripts/* \
 cp -nr $DOCROOT/default.cfg $BOOT/nut.cfg
 
 # remove nut symlink
-if [ -L /etc/nut ]; then
-    rm -f /etc/nut
-    mkdir /etc/nut
+if [ -L /etc/ups ]; then
+    rm -f /etc/ups
+    mkdir /etc/ups
 fi
 
 # copy conf files
-cp -nr $DOCROOT/nut/* /etc/nut
+cp -nr $DOCROOT/nut/* /etc/ups
 
 if [ -d $BOOT/ups ]; then
-    cp -f $BOOT/ups/* /etc/nut
+    cp -f $BOOT/ups/* /etc/ups
 fi
 
 # update permissions
-if [ -d /etc/nut ]; then
-    chown -R 218:218 /etc/nut
-    chmod -R -r /etc/nut
+if [ -d /etc/ups ]; then
+    chown -R 218:218 /etc/ups
+    chmod -R -r /etc/ups
 fi

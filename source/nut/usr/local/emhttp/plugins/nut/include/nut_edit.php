@@ -1,5 +1,5 @@
 <?
-$base = '/etc/nut/';
+$base = '/etc/upc/';
 $file = realpath($_GET['editfile']);
 $editfile = 'Invalid File';
 

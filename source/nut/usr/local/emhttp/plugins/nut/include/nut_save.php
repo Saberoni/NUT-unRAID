@@ -1,5 +1,5 @@
 <?
-$base     = '/etc/nut/';
+$base     = '/etc/upc/';
 $plgpath  = '/boot/config/plugins/nut/ups/';
 $editfile = realpath($_POST['editfile']);
 $plgfile  = $plgpath.basename($editfile);

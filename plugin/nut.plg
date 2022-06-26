@@ -2,10 +2,10 @@
 
 <!DOCTYPE PLUGIN [
 <!ENTITY name      "nut">
-<!ENTITY author    "dmacias72">
-<!ENTITY version   "2.8.0">
+<!ENTITY author    "Saberoni">
+<!ENTITY version   "2022.06.26">
 <!ENTITY launch    "Settings/NUTsettings">
-<!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/NUT-unRAID/master">
+<!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/NUT-unRAID/2.8.0_powercool">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/packages">
 <!ENTITY plgPATH   "/boot/config/plugins/&name;">
@@ -153,8 +153,8 @@ dependency files
 <!--
 The 'nut-package' file.
 -->
-<FILE Name="&plgPATH;/nut-2.8.0-x86_64-1.txz" Min="6.8" Run="upgradepkg --install-new">
-<URL>&pkgURL;/nut-2.8.0-x86_64-1.txz</URL>
+<FILE Name="&plgPATH;/nut-2.8.0.20220626-x86_64-1.txz" Min="6.10" Run="upgradepkg --install-new">
+<URL>&pkgURL;/nut-2.8.0.20220626-x86_64-1.txz</URL>
 <MD5>2c7a37ac49a3c752536b7f4f43777cc2</MD5>
 </FILE>
 
